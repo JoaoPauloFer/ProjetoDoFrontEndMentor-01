@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: rgb(206, 218, 253);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  width: 416px;
+  border-radius: 20px;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.container-description {
+  margin: 20px 45px;
+}
+
+.title-description {
+  font-weight: 900;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.description {
+  margin: 0 12px 15px 12px;
+  color: rgb(104, 104, 104);
+  font-weight: 500;
+}
+
+.informations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.music-price {
+  display: flex;
+  gap: 10px;
+}
+
+.to-alter {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price strong {
+  font-weight: 900;
+}
+
+.price span {
+  font-weight: 600;
+  color: rgb(104, 104, 104);
+}
+
+.finalizing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+}
+
+.finalizing-order {
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.finalizing-order:hover {
+  background-color: rgb(70, 70, 255);
+}
+
+.cancel-order {
+  text-decoration: none;
+  font-weight: 900;
+  color: rgb(104, 104, 104);
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.cancel-order:hover {
+  color: black;
+}
+
+@media (max-width: 360px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  .container-description {
+    margin: 20px 25px;
+  }
+
+  .title-description {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .informations {
+    padding: 15px 10px;
+  }
+
+  .price strong,
+  .price span {
+    font-size: 14px;
+  }
+}
